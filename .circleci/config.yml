@@ -10,7 +10,7 @@ jobs:
       # Add build step here
       - run: |
           echo "Building Docker image"
-          docker build -t "$DOCKERHUB_USERNAME"/circleci-test:latest .
+          docker build -t $DOCKERHUB_USERNAME/circleci-test:latest .
       # Add push step here
       - run: |
           echo "Pushing Docker image to Docker Hub"
